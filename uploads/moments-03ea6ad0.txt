@@ -1,0 +1,18 @@
+# Moments
+#
+# Format:
+#   - One photo per line.
+#   - Three parts separated by "|"  →   IMAGE | CAPTION | DATE
+#   - IMAGE is the filename inside /images/  (e.g. us1.jpg)
+#   - Lines starting with "#" are ignored.
+#   - Add, remove, or reorder freely — the gallery updates automatically.
+
+us1.jpg | First time we met after long distance (& the park PDA lol)	| Mar 2024
+us2.jpg | Chai in Udaipur      | July 2024
+us3.jpg | Exploring Vienna for the first time    | Sept 2024
+us4.jpg | Celebrating and Dancing on NY Eve in Vienna  | NY EVE 2024
+us5.jpg | Walking around Siena       | Mar 2025
+us6.jpg | Exploring Scotland and petting cows  | Aug 2025
+us7.jpg | Weird & Drunk You            | Aug 2025
+us8.jpg | Painting date             | Oct 2025
+us9.jpg | Everyday vc and sleep           | ONGOING

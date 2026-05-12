@@ -1,0 +1,60 @@
+/* Helper styles for preview cards.
+   Each card sets its own viewport in the manifest; this just ensures
+   the body fills the card and content is padded consistently. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+body {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Tiny helpers used inside cards */
+.row { display: flex; gap: 16px; align-items: center; }
+.col { display: flex; flex-direction: column; }
+.grow { flex: 1; }
+.swatch {
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  position: relative;
+  overflow: hidden;
+}
+.swatch-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+}
+.swatch-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+.swatch-name {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.token {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-3);
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  color: var(--ink-3);
+}

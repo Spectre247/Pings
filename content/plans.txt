@@ -1,0 +1,16 @@
+# Future Plans
+#
+# Format:
+#   - One plan per line.
+#   - Three parts separated by "|"  →   WHEN | TITLE | LOCATION
+#   - Lines starting with "#" are ignored.
+#   - Add, remove, or reorder freely.
+
+July 24 | My bday | Location undecided lol
+AUG 11 | Eclipse | Barcelona
+Some day | More video games | Home
+Some day | Concert | Location undecided
+Some day | Northern lights | Arctic Circle
+Hopefully soon | Sex Weekend lol | Home
+Some day | And many more! | Lots of places
+

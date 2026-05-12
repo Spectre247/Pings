@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" width="240" height="64">
+  <defs>
+    
+  </defs>
+  <text x="0" y="46" class="word">pings</text>
+  <circle cx="14" cy="14" r="3.2" class="dot"></circle>
+</svg>

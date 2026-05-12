@@ -1,0 +1,267 @@
+/* =========================================================================
+   PINGS — Design System Tokens
+   A warm, soft, modern romantic system. Editorial serif + clean sans,
+   cream paper backgrounds, blush + terracotta accents, sage for breath.
+   ========================================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap");
+
+:root {
+  /* ---------- CORE SURFACES ---------- */
+  --paper:        #FBF6EF;   /* primary background — warm cream */
+  --paper-2:      #F6EFE4;   /* slightly deeper paper, used for cards on paper */
+  --paper-3:      #EFE5D6;   /* tonal bands, dividers' soft side */
+  --ink:          #2E211C;   /* primary text — warm cocoa, never pure black */
+  --ink-2:        #5A463F;   /* secondary text */
+  --ink-3:        #93817A;   /* tertiary / metadata */
+  --ink-4:        #C8B9B0;   /* placeholder / disabled */
+  --hairline:     #E7DACB;   /* 1px borders on cream */
+  --hairline-2:   #D9C8B8;   /* slightly stronger hairline */
+
+  /* ---------- WARM PASTEL PALETTE ---------- */
+  --blush-50:     #FCEFE8;
+  --blush-100:    #F8DDD0;
+  --blush-200:    #F2C2AE;
+  --blush-300:    #EBA48B;
+  --blush-400:    #DD8569;   /* primary romantic accent — terracotta-rose */
+  --blush-500:    #C46A50;   /* hover / pressed state of blush-400 */
+  --blush-600:    #9C4F3D;
+
+  --peach-50:     #FCF1E6;
+  --peach-100:    #F8DEC0;
+  --peach-200:    #F3C492;
+  --peach-300:    #ECA968;
+
+  --rose-50:      #FBE9EA;
+  --rose-100:     #F4CBCE;
+  --rose-200:     #E9A4A9;
+  --rose-300:     #D67A82;   /* love-note accent */
+
+  --sage-50:      #EEF1E8;
+  --sage-100:     #D9E0CB;
+  --sage-200:     #B8C5A4;   /* secondary accent — quiet, grounding */
+  --sage-300:     #8E9F77;
+
+  --honey-50:     #FAF1DC;
+  --honey-100:    #F2DDA6;
+  --honey-200:    #E5C273;   /* warm gold for special moments */
+
+  --plum-50:      #EFE6EA;
+  --plum-200:     #B89AA3;
+  --plum-400:     #6B4451;   /* deep romantic ink for headers */
+
+  /* ---------- SEMANTIC ROLES ---------- */
+  --bg:               var(--paper);
+  --bg-elevated:      #FFFCF6;
+  --bg-sunken:        var(--paper-2);
+  --fg:               var(--ink);
+  --fg-muted:         var(--ink-2);
+  --fg-subtle:        var(--ink-3);
+  --fg-on-accent:     #FFFCF6;
+  --accent:           var(--blush-400);
+  --accent-hover:     var(--blush-500);
+  --accent-soft:      var(--blush-100);
+  --accent-quiet:     var(--blush-50);
+  --accent-2:         var(--sage-200);     /* secondary */
+  --accent-3:         var(--honey-200);    /* tertiary */
+  --love:             var(--rose-300);
+  --border:           var(--hairline);
+  --border-strong:    var(--hairline-2);
+
+  /* ---------- TYPOGRAPHY: FAMILIES ---------- */
+  --font-serif:   "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-sans:    "Geist", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-script:  "Newsreader", Georgia, serif; /* italic newsreader doubles as romantic accent */
+
+  /* ---------- TYPOGRAPHY: SCALE ---------- */
+  --t-display-1:  clamp(56px, 9vw, 128px);  /* hero serif */
+  --t-display-2:  clamp(40px, 6vw, 80px);
+  --t-h1:         clamp(32px, 4vw, 56px);
+  --t-h2:         clamp(26px, 3vw, 40px);
+  --t-h3:         22px;
+  --t-h4:         18px;
+  --t-body:       16px;
+  --t-body-lg:    18px;
+  --t-small:      14px;
+  --t-caption:    12px;
+  --t-overline:   11px;
+
+  /* ---------- LINE / TRACKING ---------- */
+  --lh-display:   1.02;
+  --lh-tight:     1.15;
+  --lh-snug:      1.3;
+  --lh-body:      1.55;
+  --lh-loose:     1.7;
+  --tr-tight:     -0.02em;
+  --tr-display:   -0.035em;
+  --tr-overline:  0.16em;
+
+  /* ---------- WEIGHTS ---------- */
+  --w-light:      300;
+  --w-regular:    400;
+  --w-medium:     500;
+  --w-semibold:   600;
+  --w-bold:       700;
+
+  /* ---------- SPACING (8pt-ish, but warmer 4-base for tighter UI) ---------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+
+  /* ---------- RADII ---------- */
+  --r-xs:    6px;
+  --r-sm:    10px;
+  --r-md:    16px;
+  --r-lg:    22px;
+  --r-xl:    32px;
+  --r-2xl:   44px;
+  --r-pill:  999px;
+
+  /* ---------- SHADOWS — soft, warm, never harsh ---------- */
+  --shadow-1: 0 1px 2px rgba(58, 36, 26, 0.04), 0 1px 1px rgba(58, 36, 26, 0.03);
+  --shadow-2: 0 4px 14px rgba(58, 36, 26, 0.06), 0 1px 3px rgba(58, 36, 26, 0.04);
+  --shadow-3: 0 14px 40px rgba(58, 36, 26, 0.10), 0 4px 12px rgba(58, 36, 26, 0.05);
+  --shadow-glow: 0 0 0 6px rgba(221, 133, 105, 0.10), 0 8px 24px rgba(221, 133, 105, 0.18);
+  --shadow-inset: inset 0 1px 0 rgba(255, 252, 246, 0.6), inset 0 -1px 0 rgba(58, 36, 26, 0.05);
+
+  /* ---------- MOTION ---------- */
+  --ease-soft:     cubic-bezier(0.32, 0.72, 0.24, 1);   /* Apple-ish */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --d-fast:    140ms;
+  --d-base:    240ms;
+  --d-slow:    420ms;
+  --d-page:    700ms;
+
+  /* ---------- LAYERS ---------- */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-modal:   1000;
+  --z-toast:   2000;
+}
+
+/* =========================================================================
+   BASE / RESET
+   ========================================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--blush-200);
+  color: var(--ink);
+}
+
+/* =========================================================================
+   SEMANTIC TYPE STYLES — class hooks
+   ========================================================================= */
+
+.display-1, .display-2, h1, h2, h3 {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  font-weight: var(--w-regular);
+  letter-spacing: var(--tr-display);
+  line-height: var(--lh-display);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.display-1 { font-size: var(--t-display-1); font-weight: 300; }
+.display-2 { font-size: var(--t-display-2); font-weight: 400; }
+h1, .h1   { font-size: var(--t-h1); line-height: var(--lh-tight); }
+h2, .h2   { font-size: var(--t-h2); line-height: var(--lh-tight); }
+h3, .h3 {
+  font-size: var(--t-h3);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-tight);
+  font-weight: var(--w-medium);
+}
+
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-size: var(--t-h4);
+  font-weight: var(--w-medium);
+  letter-spacing: var(--tr-tight);
+  line-height: var(--lh-snug);
+  color: var(--ink);
+  margin: 0;
+}
+
+.script {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+p, .p {
+  font-family: var(--font-sans);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  color: var(--fg-muted);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.lede {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--t-body-lg);
+  line-height: var(--lh-snug);
+  color: var(--ink-2);
+  letter-spacing: 0;
+}
+
+.small    { font-size: var(--t-small); line-height: 1.5; color: var(--fg-subtle); }
+.caption  { font-size: var(--t-caption); line-height: 1.45; color: var(--fg-subtle); }
+
+.overline {
+  font-family: var(--font-sans);
+  font-size: var(--t-overline);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-overline);
+  font-weight: var(--w-medium);
+  color: var(--fg-subtle);
+}
+
+code, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--ink-2);
+}
+
+a {
+  color: var(--blush-500);
+  text-decoration: none;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color var(--d-fast) var(--ease-standard), opacity var(--d-fast) var(--ease-standard);
+}
+a:hover { text-decoration: underline; opacity: 0.85; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: var(--s-6) 0;
+}
